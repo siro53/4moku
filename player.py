@@ -2,12 +2,6 @@ import pygame
 from pygame.locals import *
 import board
 
-# TODO: 自分のターンであるかどうかのフラグを用意 ...completed!
-# TODO: 自分のターンになったらマウスクリックでコマを置く ...completed!
-# TODO: 毎回4つタテ、ヨコ、ナナメに並んでいるかどうか判定(勝利条件)
-# TODO: コマを置いたらその場所は障害物となる(コマをおけない) ...completed!
-# TODO: 重力付きなので、床orコマ の上にしか新しいコマを置けない ...completed!
-
 COLUMN = 7  # 列
 ROW = 6  # 行
 BOX_SIZE = 60

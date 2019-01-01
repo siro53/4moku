@@ -30,8 +30,6 @@ def main():
         backImg = pygame.image.load("pokeball.jpg")
         font1 = pygame.font.Font("Muller-ExtraBold-DEMO.ttf", 37)
         font2 = pygame.font.Font("Muller-ExtraBold-DEMO.ttf", 57)
-        #font1 = pygame.font.SysFont(None, 50)
-        #font2 = pygame.font.SysFont(None, 80)
         eevee = pygame.image.load("133_2.png").convert_alpha()
         pikachu = pygame.image.load("025_2.png").convert_alpha()
         introduction = font1.render(
@@ -44,7 +42,6 @@ def main():
             screen.fill((255, 255, 255))
             # テキスト描画
             screen.blit(backImg, (0, 0))
-            #screen.blit(introduction, (110, 320))
             screen.blit(connect4, (155, 50))
             screen.blit(eevee, (230, 235))
             screen.blit(pikachu, (335, 235))
@@ -68,7 +65,6 @@ def main():
 
     if statement == play:
         bd = board.Board(screen, LINE_COLOR, 110, 55)  # 盤面のオブジェクト
-        #playBackImg = pygame.image.load("backimg.JPG")
         player1 = player.Player(screen, PLAYER1_COLOR, bd, False)
         player2 = player.Player(screen, PLAYER2_COLOR, bd, True)
         puted_pos_list = []  # 既に石を置いた場所を保管しておくlist

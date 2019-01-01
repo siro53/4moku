@@ -72,7 +72,7 @@ class Board:
         for i in range(COLUMN):
             for j in range(ROW - 3):
                 if 1+i+7*j in num_puted_pos_list and 8+i+7*j in num_puted_pos_list and 15+i+7*j in num_puted_pos_list and 22+i+7*j in num_puted_pos_list:
-                    return True # 縦
+                    return True  # 縦
         return False
         # 1 ,2 ,3 ,4 ,5 ,6 ,7
         # 8 ,9 ,10,11,12,13,14
